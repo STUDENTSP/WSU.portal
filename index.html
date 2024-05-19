@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WCONLINE - The Online Scheduling, Record-keeping, Meeting, and Reporting Solution for the Support Center">
+    <title>Walter Sisulu University</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico?id=678439a028a681d1e3edb97624ad21c3" type="image/x-icon">
+    <link rel="icon" href="/assets/images/favicon.ico?id=678439a028a681d1e3edb97624ad21c3" type="image/x-icon">
+
+
+    <style>
+        :root {
+            --wco-color-bot: #f4f4fd;
+            --wco-color-1: #ffb00f;
+            --wco-color-1a: #fbec5d;
+            --wco-color-2: #3579dc;
+            --wco-color-2a: #60affe;
+            --wco-color-4: #7d7f94;
+            --wco-color-4a: #afbed3;
+            --wco-color-5: #42426f;
+            --wco-color-5a: #4d6fac;
+            --wco-color-6: #b60000;
+            --wco-color-6a: #b60000;
+            --wco-color-7: #616718;
+            --wco-color-7a: #616718;
+            --wco-color-8: #42a600;
+            --wco-color-8a: #42a600;
+            --wco-color-9: #3579dc;
+            --wco-color-9a: #60affe;
+            --wco-color-10: #3579dc;
+            --wco-color-10a: #60affe;
+            --wco-color-top: #6c80be;
+            --wco-color-tw-c1: #bebebe;
+        }
+    </style>
+
+    <link href="/assets/css/main.css?id=f8229f904d82f0673363afce0615db75" rel="stylesheet">
+
+
+    <script src="/assets/js/tom-select.js?id=0e7bbd4d75d2397a77f292618dcec3be"></script>
+
+
+</head>
+
+<body class="body_home" style="">
+    <div class='col-12 bg-white border-bottom border-primary border-1 ps-5 pe-5 pt-2 pb-2'><a target='_blank' href='https://wsu.ac.za'><img src='https://wsu-butterworth.mywconline.com/uploads/logo_upload.png' class='img-fluid mx-auto d-block' style='max-height:350px;' alt='Walter Sisulu University Logo'></a></div>
+    <main>
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <form action="/" method="post" class="form-signin bg-white rounded-3 border border-dark" novalidate>
+                        <p><span class='fw-bold'>Log in with your institutional username and password.</span> These are the same credentials you use for other institutional services.</p>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="username" name="username" required aria-required="true" autofocus>
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="form-floating input-group pb-3">
+                            <input type="password" class="form-control" id="password" name="password" required aria-required="true" spellcheck="false" style='margin:0 !important;'>
+                            <label for="password">Password</label>
+                            <div class="input-group-append">
+                                <span class="input-group-text" onclick="password_show_hide();" style='border-bottom-left-radius: 0 !important; border-top-left-radius: 0 !important; border-top-right-radius: 0 !important; height: 100%;'> 
+				  		<i class="bi bi-eye-slash" id="show_eye" style='outline:none;' aria-label="Hide Password"></i>
+           				<i class="bi bi-eye d-none" id="hide_eye" style='outline:none;' aria-label="Show Password"></i>
+					</span>
+                            </div>
+                        </div>
+                        <script>
+                            function password_show_hide() {
+                                var x = document.getElementById("password");
+                                var show_eye = document.getElementById("show_eye");
+                                var hide_eye = document.getElementById("hide_eye");
+                                hide_eye.classList.remove("d-none");
+                                if (x.type === "password") {
+                                    x.type = "text";
+                                    show_eye.style.display = "none";
+                                    hide_eye.style.display = "block";
+                                } else {
+                                    x.type = "password";
+                                    show_eye.style.display = "block";
+                                    hide_eye.style.display = "none";
+                                }
+                            }
+                        </script>
+                        <h2 class='fs-6 pt-2 fw-bold'><label for='scheduleid'>SELECT A SCHEDULE</label></h2>
+                        <p class="mb-1"><input class="form-check-input me-1" type="radio" name="scheduleid" id="sc65e0965c0b117" value="sc65e0965c0b117" checked aria-label="2024 Faculty Based Appointments">2024 Faculty Based Appointments</p>
+                        <p class="mb-1"><input class="form-check-input me-1" type="radio" name="scheduleid" id="sc65e09e298e13d" value="sc65e09e298e13d" aria-label="2024 Post Graduate and Workshop Appointment">2024 Post Graduate and Workshop Appointment</p>
+                        <div class="checkbox mb-3 mt-3">
+                            <label>
+        			Check this box to <span class='text-secondary' data-bs-toggle="tooltip" data-bs-custom-class="wco-tooltip" data-bs-html="true" data-bs-placement="right" title="If checked, you won't have to log in on a future visit if accessing WCONLINE from the same browser.  <span class='fw-bold'>Do not use this on a shared or public computer.</span> ">stay logged in</span>: <input type="checkbox" class="form-check-input" id="setCookie" name="setCookie" value=1>
+			      </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary mb-4" type="submit" value='login' name='submit'>Log In</button>
+                        <p class='mb-0'><span class='fw-bold'>Having trouble logging in?</span> If you are unable to login, contact your institution's help desk or email <a href='mailto:smatenda@wsu.ac.za'>smatenda@wsu.ac.za</a>.
+                            <div class="d-lg-none">
+                                <p class='mb-0 mt-4'><strong>Looking for more information?</strong> <a href='#' data-bs-toggle="modal" data-bs-target="#annModal">View the announcements</a>.</p>
+                                <div class="modal fade" id="annModal" tabindex="-1" aria-labelledby="annModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="annModalLabel">Announcements</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                                            <div class="modal-body">
+                                                <p><iframe title="YouTube video player" src="//www.youtube.com/embed/vJtx88diaYk" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+                <div class="col-lg-8 d-none d-lg-block">
+                    <div class="rounded-3 p-4 pb-2 bg-white">
+                        <p><iframe title="YouTube video player" src="//www.youtube.com/embed/vJtx88diaYk" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/assets/js/main.js?id=51a0c4a2bdbff3859a0dff48e844b903"></script>
+
+
+
+    <div id="htmx_modal" class="modal fade">
+        <div id="htmx_dialog" class="modal-dialog" hx-target="this"></div>
+    </div>
+
+    <footer class="footer bg-light border-top border-primary border-1 d-print-none">
+        <div class="container p-3 text-center">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item fw-bold">
+                    <a href="https://mywconline.com" class="text-decoration-none text-danger" target="_blank">WCONLINE</a> v24.5.3 </li>
+                <li class="list-inline-item">
+                    &copy; 2024 </li>
+                <li class="list-inline-item">
+                    <a href="https://26llc.com/doc_tos.php" class="text-decoration-none text-danger" target="_blank">ToS</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutModalLabel">About</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body">
+                    <p>Walter Sisulu University is a university of technology and science located in Mthatha, East London, Butterworth and Komani. Eastern Cape, South Africa, which came into existence on 1 July 2005 as a result of a merger between Border
+                        Technikon, Eastern Cape Technikon and the University of the Transkei.</p>
+                    <hr>
+                    <p class='text-center pt-3'>
+                        <a href='mailto:smatenda@wsu.ac.za'><img src='/assets/images/icon_email.png?id=1ca29279c0028f7d47aae5c0637651c6' border=0 alt='Email Logo'></a> </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl, {
+                trigger: 'hover'
+            });
+        })
+    </script>
+
+
+
+    <!-- -->
+
+</body>
+
+</html>
